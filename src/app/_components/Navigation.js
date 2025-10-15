@@ -68,19 +68,19 @@ export default async function Navigation() {
           {/* Invisible hover bridge */}
           <div className="absolute top-10 right-0 w-full h-4"></div>
 
-          {/* Modern Dropdown */}
+          {/* ↓↓↓ Compact Dropdown only ↓↓↓ */}
           {session?.user && (
             <div
-              className="absolute top-11 right-0 min-w-[200px] bg-white/70 backdrop-blur-lg border border-accent-200/40 shadow-xl 
-                         rounded-2xl overflow-hidden transform scale-95 translate-y-2 opacity-0 
+              className="absolute top-11 right-0 min-w-[170px] bg-white/80 backdrop-blur-lg border border-accent-200/40 shadow-lg 
+                         rounded-xl overflow-hidden transform scale-95 translate-y-2 opacity-0 
                          group-hover:scale-100 group-hover:translate-y-0 group-hover:opacity-100 
                          transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
             >
-              <ul className=" text-gray-800">
+              <ul className="text-gray-800 text-[0.95rem]">
                 <li>
                   <Link
                     href="/account"
-                    className="block px-5 py-2 hover:bg-accent-50 hover:text-accent-600 transition-colors duration-200"
+                    className="block px-4 py-1.5 hover:bg-accent-50 hover:text-accent-600 transition-colors duration-200"
                   >
                     Account
                   </Link>
@@ -88,7 +88,7 @@ export default async function Navigation() {
                 <li>
                   <Link
                     href="/account/reservations"
-                    className="block px-5 py-2 hover:bg-accent-50 hover:text-accent-600 transition-colors duration-200"
+                    className="block px-4 py-1.5 hover:bg-accent-50 hover:text-accent-600 transition-colors duration-200"
                   >
                     Reservations
                   </Link>
@@ -96,7 +96,7 @@ export default async function Navigation() {
                 <li>
                   <Link
                     href="/account/profile"
-                    className="block px-5 py-2 hover:bg-accent-50 hover:text-accent-600 transition-colors duration-200"
+                    className="block px-4 py-1.5 hover:bg-accent-50 hover:text-accent-600 transition-colors duration-200"
                   >
                     Guest Profile
                   </Link>
@@ -104,7 +104,7 @@ export default async function Navigation() {
                 <li>
                   <Link
                     href="/feedback"
-                    className="block px-5 py-2.5 hover:bg-accent-50 hover:text-accent-600 transition-colors duration-200"
+                    className="block px-4 py-1.5 hover:bg-accent-50 hover:text-accent-600 transition-colors duration-200"
                   >
                     Feedback
                   </Link>

@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
               backdropFilter: "blur(8px)",
             },
             success: {
-              icon: "🌞",
+              icon: "😀",
             },
             error: {
               icon: "⚠️",
