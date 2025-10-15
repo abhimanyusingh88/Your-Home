@@ -71,7 +71,7 @@ export default function ImageModal({ open, onClose, src, alt }) {
             </motion.div>
 
             <motion.button
-              className="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md hover:bg-gray-200"
+              className="absolute top-2 right-2 bg-white text-black rounded-full p-2 shadow-md hover:bg-gray-200"
               onClick={onClose}
               whileHover={{ scale: 1.1, rotate: 90 }}
               whileTap={{ scale: 0.9 }}

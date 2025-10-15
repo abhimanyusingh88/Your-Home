@@ -6,6 +6,32 @@ import { supabase } from "./supabase";
 import { getBookings } from "./data-service";
 import { redirect } from "next/navigation";
 // if we are using the bind , the formdata must come as the last argument
+export async function createFeedback(formData) {
+  const session = await auth();
+  if (!session) throw new Error("You must be logged in to submit feedback");
+
+  const newFeedback = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    room: formData.get("room"),
+    rating: Number(formData.get("rating")),
+    message: formData.get("message").slice(0, 1000),
+    // created_at: new Date().toISOString(),
+  };
+
+  const { error } = await supabase
+    .from("feedback")
+    .insert([newFeedback])
+    
+
+  if (error) {
+    console.error(error);
+    throw new Error("Feedback could not be submitted");
+  }
+
+  revalidatePath("/feedback");
+}
+
 export async function createBooking(bookingData,formData)
 {
     const session = await auth();

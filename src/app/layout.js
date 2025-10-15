@@ -4,7 +4,7 @@ import Header from "./_components/Header";
 import { ReservationProvider } from "./_components/ReservationContext";
 import WhatsAppButton from "./_components/WhatappButton";
 import AIChatButton from "./_components/aiChat";
-// import WhatsAppButton from "./_components/WhatsAppButton"; // ✅ Add this line
+import { Toaster } from "react-hot-toast";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -34,10 +34,43 @@ export default function RootLayout({ children }) {
           </main>
         </div>
 
-        {/* ✅ Floating WhatsApp Button (visible globally) */}
-
         <WhatsAppButton />
-        <AIChatButton/>
+        <AIChatButton />
+
+        <footer className="text-center py-6 border-t border-primary-800 text-sm text-primary-400">
+          © {new Date().getFullYear()} The Wilderness & Family. All rights reserved.
+        </footer>
+
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            duration: 3000,
+            style: {
+              background: "#facc15",
+              color: "#1a1a1a",
+              border: "1px solid rgba(255,255,255,0.1)",
+              borderRadius: "12px",
+              padding: "14px 18px",
+              fontWeight: "500",
+              fontSize: "0.95rem",
+              display: "flex",
+              alignItems: "center",
+              gap: "10px",
+              boxShadow: "0 8px 24px rgba(0,0,0,0.35)",
+              backdropFilter: "blur(8px)",
+            },
+            success: {
+              icon: "🌞",
+            },
+            error: {
+              icon: "⚠️",
+              style: {
+                background: "#f87171",
+                color: "#fff",
+              },
+            },
+          }}
+        />
       </body>
     </html>
   );
