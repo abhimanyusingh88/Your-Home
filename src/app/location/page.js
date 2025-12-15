@@ -112,8 +112,7 @@ export default function Page() {
 
       <p className="text-lg max-w-2xl text-gray-300">
         Nestled in the heart of the{" "}
-        <span className="text-accent-300">Italian Dolomites</span>, The Wild
-        Oasis offers breathtaking views and the serenity of nature.
+        <span className="text-accent-300">Italian Dolomites</span>, The Wilderness offers breathtaking views and the serenity of nature.
       </p>
 
       {weather && (
@@ -226,7 +225,7 @@ export default function Page() {
         a: "Absolutely! Every stay includes a complimentary gourmet breakfast made with local ingredients. A full à la carte breakfast is also available upon request with additional charges.",
       },
       {
-        q: "Do you allow pets at The Wild Oasis?",
+        q: "Do you allow pets at The hotel?",
         a: "We love pets! Selected cabins are pet-friendly — please check availability or contact us before booking to ensure we can accommodate your furry friends comfortably.",
       },
       {
