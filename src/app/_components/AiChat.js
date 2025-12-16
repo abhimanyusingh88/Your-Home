@@ -10,7 +10,7 @@ export default function AIChatButton() {
   const [messages, setMessages] = useState([
     {
       from: "bot",
-      text: "👋 Hello! I’m your AI concierge at *The Wilderness*. How can I help you today?",
+      text: "👋 Hello! I’m your AI concierge at *The Your Home*. How can I help you today?",
     },
   ]);
   const [isTyping, setIsTyping] = useState(false);
