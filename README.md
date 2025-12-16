@@ -6,6 +6,6 @@ This is a hotel booking project made with:
 this project mainly focuses on smooth cabin booking with multiple features, such as filters, reminder for seleted dates, profile update, safe login and logout to access you profile and bookings,
 booking details can be edited or deleted, a smooth and interactive ui to enhance your overall experience.
 A full demo video of this project can be seen here in this video :
-[![Watch the video](https://img.youtube.com/vi/u0SKQMhyA9s/maxresdefault.jpg)](https://www.youtube.com/watch?v=u0SKQMhyA9s)
+
 
 
