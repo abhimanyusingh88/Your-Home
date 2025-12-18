@@ -15,11 +15,14 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: {
-    template: "%s / The Wilderness",
-    default: "The Wilderness",
+    template: "%s / Your Home",
+    default: "Your Home",
   },
   description:
     "Luxurious cabin hotel, located at the great mountains of Himalayas",
+  icons: {
+    icon: "/homee.png",
+  },
 };
 
 export default function RootLayout({ children }) {
