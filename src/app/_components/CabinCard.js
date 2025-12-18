@@ -10,16 +10,16 @@ function CabinCard({ cabin }) {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="flex flex-col md:flex-row border border-primary-800 w-full overflow-hidden">
+      <div className="flex flex-col border border-primary-800 w-full overflow-hidden">
         <div
-          className="relative w-full md:w-auto h-64 md:h-auto md:flex-1 group cursor-pointer overflow-hidden"
+          className="relative w-full h-64 group cursor-pointer overflow-hidden"
           onClick={() => setOpen(!open)}
         >
           <Image
             src={image}
             alt={`Cabin ${name}`}
             fill
-            className="object-cover border-b md:border-b-0 md:border-r border-primary-800 transition-transform duration-500 group-hover:scale-105"
+            className="object-cover border-b border-primary-800 transition-transform duration-500 group-hover:scale-105"
           />
 
           {/* Modern hover overlay */}
@@ -30,7 +30,7 @@ function CabinCard({ cabin }) {
           </div>
         </div>
 
-        <div className="flex-grow">
+        <div className="flex-grow flex flex-col justify-between">
           <div className="pt-5 pb-4 px-7 bg-primary-950">
             <h3 className="text-accent-500 font-semibold text-2xl mb-3">
               Cabin {name}

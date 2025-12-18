@@ -10,7 +10,7 @@ import { auth } from "../_lib/auth";
 async function Header() {
   const session = await auth();
   return (
-    <header className='border-b border-primary-900 px-4 py-5 md:px-8'>
+    <header className='px-4 py-5 md:px-8 relative z-50'>
       <div className='flex justify-between items-center max-w-7xl mx-auto'>
         <Logo />
         <div className="hidden md:flex">

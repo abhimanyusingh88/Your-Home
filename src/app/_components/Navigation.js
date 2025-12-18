@@ -66,8 +66,8 @@ export default async function Navigation() {
             )}
           </div>
 
-          {/* Invisible hover bridge */}
-          <div className="absolute top-10 right-0 w-full h-4"></div>
+          {/* Invisible hover bridge - Extended for better usability */}
+          <div className="absolute top-8 right-0 w-[300%] h-14 z-20"></div>
 
           {/* ↓↓↓ Compact Dropdown only ↓↓↓ */}
           {session?.user && (
@@ -75,7 +75,7 @@ export default async function Navigation() {
               className="absolute top-11 right-0 min-w-[170px] bg-white/80 backdrop-blur-lg border border-accent-200/40 shadow-lg 
                          rounded-xl overflow-hidden transform scale-95 translate-y-2 opacity-0 
                          group-hover:scale-100 group-hover:translate-y-0 group-hover:opacity-100 
-                         transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                         transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] z-30"
             >
               <ul className="text-gray-800 text-[0.95rem]">
                 <li>
