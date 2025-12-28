@@ -13,7 +13,7 @@ export default async function Reservation({ cabin }) {
   const session = await auth();
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-8 md:gap-6 items-start border border-primary-100 p-2 md:p-6">
+    <div className=" md:grid-cols-[1.2fr_1fr] gap-8 md:gap-6 items-start border border-primary-100 p-2 md:p-6">
       <DateSelector settings={settings} bookedDates={bookedDates} cabin={cabin} />
 
       {session?.user ? <ReservationForm cabin={cabin} user={session.user} /> : <LoginMessage />}
